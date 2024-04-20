@@ -6,6 +6,11 @@
       <title>Document</title>
 </head>
 <body>
-      <h2>name</h2>
+      <form method="POST" action="">
+            <li> my task</li>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Submit</button>
+      </form>
 </body>
 </html>
